@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #movieList {
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            display: none; /* Hide until movies are fetched */
+        }
+        .movie-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .movie-item:hover {
+            background-color: #f0f0f0;
+        }
+        #movieDetails {
+            margin-top: 20px;
+            display: none; /* Hide until a movie is selected */
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie Search App</h1>
+    <input type="text" id="searchInput" placeholder="Search for a movie...">
+    <div id="movieList"></div>
+    <div id="movieDetails"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
